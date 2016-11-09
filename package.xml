@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dual_m10ia_cell_moveit_config</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      MoveIt package for the IRCv2 example cell with dual Fanuc M-10iA manipulators.
+    </p>
+    <p>
+      An automatically generated package with all the configuration and launch
+      files for using the example dual Fanuc M-10iA work cell with the MoveIt
+      Motion Planning Framework.
+    </p>
+  </description>
+  <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/dual_m10ia_cell_moveit_config</url>
+  <url type="bugtracker">https://github.com/gavanderhoorn/dual_m10ia_cell_moveit_config</url>
+  <url type="repository">https://github.com/gavanderhoorn/dual_m10ia_cell_moveit_config</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>dual_m10ia_cell_support</exec_depend>
+  <exec_depend>industrial_robot_simulator</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>trac_ik_kinematics_plugin</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>

@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dual_m10ia_cell_support
+    relative_path: urdf/dual_m10ia_cell.xacro
+  SRDF:
+    relative_path: config/dual_m10ia_cell.srdf
+  CONFIG:
+    generated_timestamp: 1478694822

@@ -1,0 +1,31 @@
+#
+# This file provides the controller configuration for Moveit. This maps joint
+# names that MoveIt plans for to specific controllers that are capable of
+# executing trajectories for those joints.
+# 
+# In this example moveit configuration, the industrial_robot_simulator (which
+# functions as a stand-in for any ROS-Industrial compliant driver) is configured
+# to start only a single FollowJointTrajectory server for all joints, so there
+# is only a single controller configured here.
+#
+# In cases with multiple action servers, the 'joints'-list should be split up
+# according to whichever controller is responsible for which joint.
+#
+controller_list:
+  - name: ""
+    # this is the name of the action server
+    action_ns: joint_trajectory_action
+    type: FollowJointTrajectory
+    joints:
+     - left_joint_1
+     - left_joint_2
+     - left_joint_3
+     - left_joint_4
+     - left_joint_5
+     - left_joint_6
+     - right_joint_1
+     - right_joint_2
+     - right_joint_3
+     - right_joint_4
+     - right_joint_5
+     - right_joint_6
